@@ -1,21 +1,20 @@
 <!DOCTYPE html>
+<html lang="es"><!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>C.C. Casa de Dios Valdemoro | Iglesia Evangélica</title>
-    <meta name="description" content="Comunidad Cristiana Casa de Dios en Valdemoro. Reuniones los domingos 11:30h. Calle de las Vacas 6, Local 5. ¡Te esperamos!">
-    <meta name="keywords" content="Casa de Dios, Valdemoro, Iglesia Evangelica, Culto, Dios, Iglesia Valdemoro">
-    
+    <title>Casa de Dios Valdemoro | Iglesia Evangélica</title>
+    <meta name="description" content="Comunidad Cristiana Casa de Dios en Valdemoro.">
     <style>
         body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; padding: 0; background-color: #ffffff; color: #1A1A1A; line-height: 1.6; scroll-behavior: smooth; }
         
-        /* FOTO DE FONDO MEJORADA */
         .hero { 
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('./fondo.jpg');
+            /* AQUÍ ESTÁ LA CORRECCIÓN: ahora busca 'imagenfondo.png' */
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('imagenfondo.png');
             background-size: cover; 
             background-position: center;
+            background-attachment: fixed;
             height: 85vh; 
             display: flex; 
             flex-direction: column; 
@@ -25,16 +24,20 @@
             color: white;
         }
         .hero h1 { font-size: 3.5rem; color: #B08A3E; margin: 0; letter-spacing: 4px; font-weight: 900; text-shadow: 2px 2px 10px rgba(0,0,0,0.8); }
-        .hero p { font-size: 1.8rem; font-style: italic; margin-top: 10px; }
+        .hero p { font-size: 1.8rem; font-style: italic; margin-top: 10px; text-shadow: 2px 2px 5px rgba(0,0,0,0.5); }
 
-        nav { background-color: #1a1a1a; border-top: 3px solid #B08A3E; padding: 20px; text-align: center; position: sticky; top: 0; z-index: 100; }
+        nav { background-color: #1a1a1a; border-top: 3px solid #B08A3E; padding: 20px; text-align: center; position: sticky; top: 0; z-index: 100; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
         nav a { color: white; text-decoration: none; font-weight: bold; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; margin: 0 15px; }
+        nav a:hover { color: #B08A3E; }
 
         .container { max-width: 1100px; margin: auto; padding: 60px 20px; text-align: center; }
         h2 { color: #B08A3E; font-size: 2.5rem; letter-spacing: 3px; margin-bottom: 40px; text-transform: uppercase; }
 
+        .punto-fe { border-left: 5px solid #B08A3E; padding: 20px; margin-bottom: 20px; text-align: left; background: #f9f9f9; border-radius: 0 10px 10px 0; font-size: 1.2rem; }
+        .vision-seccion { background-color: #1a1a1a; color: white; padding: 100px 20px; margin: 40px 0; text-align: center; }
+
         .grid-reuniones { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-        .card { background: white; border: 1px solid #eee; border-radius: 15px; padding: 30px; width: 250px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .card { background: white; border: 1px solid #eee; border-radius: 15px; padding: 30px; width: 250px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); text-align: center; color: #333; }
         .card .dia { font-size: 1.8rem; font-weight: 900; color: #B08A3E; display: block; }
 
         .contacto { background-color: #1a1a1a; color: white; padding: 60px 20px; text-align: center; }
@@ -47,16 +50,30 @@
 </head>
 <body>
 
-<div class="hero">
-    <h1>C.C. CASA DE DIOS VALDEMORO</h1>
+<div class="hero" id="inicio">
+    <h1>CASA DE DIOS VALDEMORO</h1>
     <p>"Nuestra Casa, Tu Casa"</p>
 </div>
 
 <nav>
-    <a href="#">Inicio</a>
+    <a href="#inicio">Inicio</a>
+    <a href="#fe">Creemos</a>
+    <a href="#vision">Visión</a>
     <a href="#reuniones">Reuniones</a>
-    <a href="#donde">Ubicación</a>
+    <a href="#contacto">Ubicación</a>
 </nav>
+
+<div class="container" id="fe">
+    <h2>QUÉ CREEMOS</h2>
+    <div class="punto-fe"><strong>Jesucristo al Centro:</strong> Confesamos a Jesucristo como el único Señor y Salvador.</div>
+    <div class="punto-fe"><strong>Autoridad Bíblica:</strong> La Biblia es nuestra autoridad suprema y guía.</div>
+    <div class="punto-fe"><strong>Obra del Espíritu:</strong> Creemos en Su poder para transformar vidas y familias.</div>
+</div>
+
+<div class="vision-seccion" id="vision">
+    <h2>NUESTRA VISIÓN</h2>
+    <p style="font-size: 1.6rem; max-width: 800px; margin: auto; font-weight: 300;">Ser una familia de fe que refleja el amor de Cristo, acompaña en el crecimiento espiritual y comparte esperanza en Valdemoro.</p>
+</div>
 
 <div class="container" id="reuniones">
     <h2>REUNIONES SEMANALES</h2>
@@ -68,18 +85,19 @@
     </div>
 </div>
 
-<div class="contacto" id="donde">
+<div class="contacto" id="contacto">
     <h2>DÓNDE ESTAMOS</h2>
     <p style="font-size: 1.2rem;">Calle de las Vacas, 6 (Local 5), Valdemoro, Madrid</p>
     
     <div class="mapa-contenedor">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.0336215309865!2d-3.6766453!3d40.1853434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd41f391f634839f%3A0x7d6c6e7592497673!2sC.%20de%20las%20Vacas%2C%206%2C%2028341%20Valdemoro%2C%20Madrid!5e0!3m2!1ses!2ses!4v1710000000000!5m2!1ses!2ses" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.53123456789!2d-3.676!3d40.187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDExJzEyLjAiTiAzwrA0MCczMy42Ilc!5e0!3m2!1ses!2ses!4v1700000000000" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
 
     <div style="margin: 25px 0;">
         <a href="tel:685110296">📞 685 110 296</a>
         <a href="tel:655452243">📞 655 452 243</a>
     </div>
+    <a href="mailto:cccasadedios.e@gmail.com">✉️ cccasadedios.e@gmail.com</a>
     <p style="margin-top:30px; color:#888;">CASA DE DIOS VALDEMORO © 2026</p>
 </div>
 
@@ -89,3 +107,105 @@
 
 </body>
 </html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa de Dios Valdemoro | Iglesia Evangélica</title>
+    <meta name="description" content="Comunidad Cristiana Casa de Dios en Valdemoro.">
+    <style>
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; padding: 0; background-color: #ffffff; color: #1A1A1A; line-height: 1.6; scroll-behavior: smooth; }
+        
+        .hero { 
+            /* AQUÍ ESTÁ LA CORRECCIÓN: ahora busca 'imagenfondo.png' */
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('imagenfondo.png');
+            background-size: cover; 
+            background-position: center;
+            background-attachment: fixed;
+            height: 85vh; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            text-align: center; 
+            color: white;
+        }
+        .hero h1 { font-size: 3.5rem; color: #B08A3E; margin: 0; letter-spacing: 4px; font-weight: 900; text-shadow: 2px 2px 10px rgba(0,0,0,0.8); }
+        .hero p { font-size: 1.8rem; font-style: italic; margin-top: 10px; text-shadow: 2px 2px 5px rgba(0,0,0,0.5); }
+
+        nav { background-color: #1a1a1a; border-top: 3px solid #B08A3E; padding: 20px; text-align: center; position: sticky; top: 0; z-index: 100; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        nav a { color: white; text-decoration: none; font-weight: bold; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; margin: 0 15px; }
+        nav a:hover { color: #B08A3E; }
+
+        .container { max-width: 1100px; margin: auto; padding: 60px 20px; text-align: center; }
+        h2 { color: #B08A3E; font-size: 2.5rem; letter-spacing: 3px; margin-bottom: 40px; text-transform: uppercase; }
+
+        .punto-fe { border-left: 5px solid #B08A3E; padding: 20px; margin-bottom: 20px; text-align: left; background: #f9f9f9; border-radius: 0 10px 10px 0; font-size: 1.2rem; }
+        .vision-seccion { background-color: #1a1a1a; color: white; padding: 100px 20px; margin: 40px 0; text-align: center; }
+
+        .grid-reuniones { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        .card { background: white; border: 1px solid #eee; border-radius: 15px; padding: 30px; width: 250px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); text-align: center; color: #333; }
+        .card .dia { font-size: 1.8rem; font-weight: 900; color: #B08A3E; display: block; }
+
+        .contacto { background-color: #1a1a1a; color: white; padding: 60px 20px; text-align: center; }
+        .contacto a { color: #B08A3E; text-decoration: none; font-weight: 900; font-size: 1.3rem; display: block; margin: 10px 0; }
+        
+        .mapa-contenedor { margin: 30px auto; border-radius: 15px; overflow: hidden; max-width: 900px; border: 2px solid #B08A3E; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+
+        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 2px 2px 20px rgba(0,0,0,0.3); z-index: 200; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<div class="hero" id="inicio">
+    <h1>CASA DE DIOS VALDEMORO</h1>
+    <p>"Nuestra Casa, Tu Casa"</p>
+</div>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#fe">Creemos</a>
+    <a href="#vision">Visión</a>
+    <a href="#reuniones">Reuniones</a>
+    <a href="#contacto">Ubicación</a>
+</nav>
+
+<div class="container" id="fe">
+    <h2>QUÉ CREEMOS</h2>
+    <div class="punto-fe"><strong>Jesucristo al Centro:</strong> Confesamos a Jesucristo como el único Señor y Salvador.</div>
+    <div class="punto-fe"><strong>Autoridad Bíblica:</strong> La Biblia es nuestra autoridad suprema y guía.</div>
+    <div class="punto-fe"><strong>Obra del Espíritu:</strong> Creemos en Su poder para transformar vidas y familias.</div>
+</div>
+
+<div class="vision-seccion" id="vision">
+    <h2>NUESTRA VISIÓN</h2>
+    <p style="font-size: 1.6rem; max-width: 800px; margin: auto; font-weight: 300;">Ser una familia de fe que refleja el amor de Cristo, acompaña en el crecimiento espiritual y comparte esperanza en Valdemoro.</p>
+</div>
+
+<div class="container" id="reuniones">
+    <h2>REUNIONES SEMANALES</h2>
+    <div class="grid-reuniones">
+        <div class="card"><span class="dia">DOMINGOS</span><span style="font-size:2.2rem; font-weight:bold;">11:30h</span><p>Culto General</p></div>
+        <div class="card"><span class="dia">JUEVES</span><span style="font-size:2.2rem; font-weight:bold;">18:00h</span><p>Ministerio de Mujeres</p></div>
+        <div class="card"><span class="dia">VIERNES</span><span style="font-size:2.2rem; font-weight:bold;">20:00h</span><p>Oración</p></div>
+        <div class="card"><span class="dia">SÁBADOS</span><span style="font-size:2.2rem; font-weight:bold;">20:00h</span><p>Estudio Bíblico</p></div>
+    </div>
+</div>
+
+<div class="contacto" id="contacto">
+    <h2>DÓNDE ESTAMOS</h2>
+    <p style="font-size: 1.2rem;">Calle de las Vacas, 6 (Local 5), Valdemoro, Madrid</p>
+    
+    <div class="mapa-contenedor">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.53123456789!2d-3.676!3d40.187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDExJzEyLjAiTiAzwrA0MCczMy42Ilc!5e0!3m2!1ses!2ses!4v1700000000000" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div style="margin: 25px 0;">
+        <a href="tel:685110296">📞 685 110 296</a>
+        <a href="tel:655452243">📞 655 452 243</a>
+    </div>
+    <a href="mailto:cccasadedios.e@gmail.com">✉️ cccasadedios.e@gmail.com</a>
+    <p style="margin-top:30px; color:#888;">CASA DE DIOS VALDEMORO © 2026</p>
+</div>
+
+<a href="https://wa.me/34685110296" class="whatsapp-float" target="_blank">
+    <svg width="35" height="35" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9
