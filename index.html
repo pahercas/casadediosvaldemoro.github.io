@@ -7,8 +7,8 @@
     <style>
         body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; padding: 0; background-color: #ffffff; color: #1A1A1A; line-height: 1.6; scroll-behavior: smooth; }
         
-        /* SECCIÓN DE INICIO CON LA FOTO FIJADA */
         .hero { 
+            /* Esta es la parte de la foto, ahora con la dirección completa */
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://casadediosvaldemoro.es/fondo.jpg');
             background-size: cover; 
             background-position: center;
@@ -22,55 +22,38 @@
             color: white;
         }
         .hero h1 { font-size: 3.5rem; color: #B08A3E; margin: 0; letter-spacing: 4px; font-weight: 900; text-shadow: 2px 2px 10px rgba(0,0,0,0.8); }
-        .hero p { font-size: 1.8rem; font-style: italic; margin-top: 10px; text-shadow: 2px 2px 5px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.8rem; font-style: italic; margin-top: 10px; }
 
-        nav { background-color: #1a1a1a; border-top: 3px solid #B08A3E; padding: 20px; text-align: center; position: sticky; top: 0; z-index: 100; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        nav { background-color: #1a1a1a; border-top: 3px solid #B08A3E; padding: 20px; text-align: center; position: sticky; top: 0; z-index: 100; }
         nav a { color: white; text-decoration: none; font-weight: bold; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; margin: 0 15px; }
 
         .container { max-width: 1100px; margin: auto; padding: 60px 20px; text-align: center; }
         h2 { color: #B08A3E; font-size: 2.5rem; letter-spacing: 3px; margin-bottom: 40px; text-transform: uppercase; }
 
-        .punto-fe { border-left: 5px solid #B08A3E; padding: 20px; margin-bottom: 20px; text-align: left; background: #f9f9f9; border-radius: 0 10px 10px 0; font-size: 1.2rem; }
-        .vision-seccion { background-color: #1a1a1a; color: white; padding: 100px 20px; margin: 40px 0; text-align: center; }
-
         .grid-reuniones { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-        .card { background: white; border: 1px solid #eee; border-radius: 15px; padding: 30px; width: 250px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); text-align: center; }
+        .card { background: white; border: 1px solid #eee; border-radius: 15px; padding: 30px; width: 250px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
         .card .dia { font-size: 1.8rem; font-weight: 900; color: #B08A3E; display: block; }
 
         .contacto { background-color: #1a1a1a; color: white; padding: 60px 20px; text-align: center; }
-        .contacto a { color: #B08A3E !important; text-decoration: none; font-weight: 900; font-size: 1.3rem; display: block; margin: 10px 0; }
+        .contacto a { color: #B08A3E; text-decoration: none; font-weight: 900; font-size: 1.3rem; display: block; margin: 10px 0; }
         
-        .mapa-contenedor { margin: 30px auto; border-radius: 15px; overflow: hidden; max-width: 900px; border: 2px solid #B08A3E; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .mapa-contenedor { margin: 30px auto; border-radius: 15px; overflow: hidden; max-width: 900px; border: 2px solid #B08A3E; }
 
         .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 2px 2px 20px rgba(0,0,0,0.3); z-index: 200; text-decoration: none; }
     </style>
 </head>
 <body>
 
-<div class="hero" id="inicio">
+<div class="hero">
     <h1>C.C. CASA DE DIOS VALDEMORO</h1>
     <p>"Nuestra Casa, Tu Casa"</p>
 </div>
 
 <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#fe">Creemos</a>
-    <a href="#vision">Visión</a>
+    <a href="#">Inicio</a>
     <a href="#reuniones">Reuniones</a>
-    <a href="#contacto">Contacto</a>
+    <a href="#donde">Ubicación</a>
 </nav>
-
-<div class="container" id="fe">
-    <h2>QUÉ CREEMOS</h2>
-    <div class="punto-fe"><strong>Jesucristo al Centro:</strong> Confesamos a Jesucristo como el único Señor y Salvador.</div>
-    <div class="punto-fe"><strong>Autoridad Bíblica:</strong> La Biblia es nuestra autoridad suprema y guía infalible.</div>
-    <div class="punto-fe"><strong>Obra del Espíritu:</strong> Creemos en Su poder transformador para la familia.</div>
-</div>
-
-<div class="vision-seccion" id="vision">
-    <h2>NUESTRA VISIÓN</h2>
-    <p style="font-size: 1.6rem; max-width: 800px; margin: auto; font-weight: 300;">Ser una familia de fe que refleja el amor de Cristo, acompaña en el crecimiento espiritual y comparte esperanza.</p>
-</div>
 
 <div class="container" id="reuniones">
     <h2>REUNIONES SEMANALES</h2>
@@ -82,19 +65,18 @@
     </div>
 </div>
 
-<div class="contacto" id="contacto">
+<div class="contacto" id="donde">
     <h2>DÓNDE ESTAMOS</h2>
-    <p style="font-size: 1.2rem;">Calle de las Vacas, 6 (Local 5), Valdemoro, Madrid</p>
+    <p>Calle de las Vacas, 6 (Local 5), Valdemoro, Madrid</p>
     
     <div class="mapa-contenedor">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3050.419409559388!2d-3.6766744!3d40.1886121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd421f6609930935%3A0xc669f3a613619999!2sCalle%20de%20las%20Vacas%2C%206%2C%2028341%20Valdemoro%2C%20Madrid!5e0!3m2!1ses!2ses!4v1700000000000" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.2312!2d-3.676!3d40.188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd41f32!2sCalle%20de%20las%20Vacas%2C%206%2C%2028341%20Valdemoro%2C%20Madrid!5e0!3m2!1ses!2ses!4v123456789" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
 
     <div style="margin: 25px 0;">
         <a href="tel:685110296">📞 685 110 296</a>
         <a href="tel:655452243">📞 655 452 243</a>
     </div>
-    <a href="mailto:cccasadedios.e@gmail.com">✉️ cccasadedios.e@gmail.com</a>
     <p style="margin-top:30px; color:#888;">CASA DE DIOS VALDEMORO © 2026</p>
 </div>
 
