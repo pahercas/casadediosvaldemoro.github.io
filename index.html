@@ -3,66 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa de Dios Valdemoro</title>
+    <title>Comunidad Cristiana Casa de Dios Valdemoro</title>
     <style>
-        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; padding: 0; color: #1A1A1A; background-color: #ffffff; line-height: 1.6; }
-        header { background-color: #1a1a1a; color: white; padding: 60px 20px; text-align: center; }
-        .hero { text-align: center; padding: 50px 20px; background-color: #f4f4f4; }
-        .hero img { max-width: 100%; height: auto; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 20px; }
-        .container { max-width: 1100px; margin: auto; padding: 40px 20px; }
-        .reuniones { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px; }
-        .card { background: #fdfdfd; border: 1px solid #eee; border-radius: 15px; padding: 30px; width: 280px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
-        .card h3 { color: #b08d44; font-size: 22px; margin-bottom: 10px; text-transform: uppercase; }
-        .card h4 { font-size: 32px; margin: 10px 0; font-weight: bold; }
-        .ubicacion { background-color: #f9f9f9; padding: 60px 20px; text-align: center; }
-        .mapa-container { margin-top: 30px; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 25px rgba(0,0,0,0.1); max-width: 900px; margin-left: auto; margin-right: auto; }
-        footer { padding: 40px; text-align: center; font-size: 15px; color: #888; border-top: 1px solid #eee; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; color: #333; background-color: #f4f4f4; }
+        header { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://casadediosvaldemoro.es/logo.jpg'); background-size: cover; background-position: center; color: white; padding: 100px 20px; text-align: center; }
+        header h1 { font-size: 3rem; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        header p { font-size: 1.5rem; font-style: italic; }
+        .contenedor { max-width: 1100px; margin: -50px auto 40px; padding: 20px; background: white; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); position: relative; z-index: 10; }
+        .intro { text-align: center; padding: 40px 20px; }
+        .grid-reuniones { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 30px; }
+        .tarjeta { background: #fff; border-top: 5px solid #b08d44; border-radius: 10px; padding: 25px; width: 220px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .tarjeta:hover { transform: translateY(-10px); }
+        .tarjeta h3 { color: #b08d44; margin-bottom: 10px; text-transform: uppercase; }
+        .tarjeta .hora { font-size: 24px; font-weight: bold; color: #333; }
+        .ubicacion { padding: 60px 20px; text-align: center; background: #fff; }
+        .mapa-contenedor { margin-top: 30px; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        footer { background: #2c3e50; color: white; text-align: center; padding: 40px 20px; }
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 2px 2px 10px rgba(0,0,0,0.2); text-decoration: none; z-index: 100; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1 style="letter-spacing: 3px; font-size: 36px;">CASA DE DIOS VALDEMORO</h1>
+    <h1>C.C. CASA DE DIOS</h1>
+    <p>"Nuestra Casa, Tu Casa"</p>
 </header>
 
-<div class="hero">
-    <img src="https://casadediosvaldemoro.es/logo.jpg" alt="Casa de Dios Valdemoro" onerror="this.style.display='none'">
-    <h2>Bienvenidos a nuestra casa</h2>
-    <p style="max-width: 700px; margin: auto; font-size: 18px;">Un lugar de encuentro, fe y familia en el corazón de Valdemoro.</p>
-</div>
+<div class="contenedor">
+    <div class="intro">
+        <h2>Bienvenidos</h2>
+        <p>Un lugar de encuentro con Dios en el corazón de Valdemoro.</p>
+    </div>
 
-<div class="container">
-    <h2 style="text-align:center; color:#b08d44; font-size: 32px; text-transform:uppercase;">Nuestras Reuniones</h2>
-    <div class="reuniones">
-        <div class="card">
+    <h2 style="text-align:center; color:#b08d44;">REUNIONES</h2>
+    <div class="grid-reuniones">
+        <div class="tarjeta">
             <h3>DOMINGOS</h3>
-            <h4>11:30h</h4>
+            <p class="hora">11:30h</p>
             <p>Culto General</p>
         </div>
-        <div class="card">
+        <div class="tarjeta">
+            <h3>JUEVES</h3>
+            <p class="hora">18:00h</p>
+            <p>Ministerio de Mujeres</p>
+        </div>
+        <div class="tarjeta">
             <h3>VIERNES</h3>
-            <h4>20:00h</h4>
+            <p class="hora">20:00h</p>
             <p>Reunión de Oración</p>
         </div>
-        <div class="card">
+        <div class="tarjeta">
             <h3>SÁBADOS</h3>
-            <h4>20:00h</h4>
+            <p class="hora">20:00h</p>
             <p>Estudio Bíblico</p>
         </div>
     </div>
 </div>
 
 <div class="ubicacion">
-    <h2 style="color:#b08d44; font-size: 32px;">DÓNDE ESTAMOS</h2>
-    <p style="font-size: 20px;">Calle de las Vacas, 6, 28341 Valdemoro, Madrid</p>
-    <div class="mapa-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.434860013233!2d-3.6826359!3d40.1882654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd41fcbfb503a3a1%3A0xf6b696f02b2c814f!2sC.%20de%20las%20Vacas%2C%206%2C%2028341%20Valdemoro%2C%20Madrid!5e0!3m2!1ses!2ses!4v1700000000000" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <h2>DÓNDE ESTAMOS</h2>
+    <p>Calle de las Vacas, 6, 28341 Valdemoro, Madrid</p>
+    <div class="mapa-contenedor" style="max-width: 900px; margin: 30px auto;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.2435472851177!2d-3.6766624!3d40.1814131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42203102602737%3A0xc02381e4b8689531!2sCalle%20de%20las%20Vacas%2C%206%2C%2028341%20Valdemoro%2C%20Madrid!5e0!3m2!1ses!2ses!4v1710240000000" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
 </div>
 
 <footer>
-    CASA DE DIOS VALDEMORO © 2026 - Versión 1.0 Final
+    <p>COMUNIDAD CRISTIANA CASA DE DIOS VALDEMORO</p>
+    <p>© 2026 - Calle de las Vacas, 6</p>
 </footer>
+
+<a href="https://wa.me/34600000000" class="whatsapp-float" target="_blank">
+    <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.025 3.207l-.633 2.316 2.369-.621c.884.484 1.908.74 3.007.741 3.182 0 5.768-2.586 5.769-5.766 0-3.18-2.587-5.766-5.769-5.766z"/></svg>
+</a>
 
 </body>
 </html>
